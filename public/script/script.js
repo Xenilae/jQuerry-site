@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(window).on("scroll", function() {
-        $(".top_text").css("opacity", 1 - $(window).scrollTop() / 500)
+        $(".top_text").css("opacity", 1 - $(window).scrollTop() / 500);
     });
 
     const changeImage = () => {
