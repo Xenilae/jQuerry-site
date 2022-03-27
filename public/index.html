@@ -10,20 +10,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <div class="body_container">
-        <div class="top">
-            <div class="top_text">Hello</div>
+    <div class="top">
+        <div class="top_text">Ride unleashed</div>
+    </div>
+    <div class="container">
+        <div class="container_text">
+            <h2>What about a ride</h2>
+            <h1>Bikes! They are for everyoune, just get a ride.</h1>
+            <button>Customize</button>
         </div>
-        <div class="container">
+        <div class="container_info">
             <div class="container_text">
-                Want to tell you about my hobbie, it's great
+                <span>You can costumize your own bike</span>
+                <br>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus mollitia nam quaerat, corporis adipisci optio vel placeat eaque incidunt odio cupiditate. Illo incidunt laborum ipsum neque culpa autem voluptates pariatur porro
+                    exercitationem cumque quae quisquam libero voluptas mollitia earum sint tenetur aperiam, repellat repellendus obcaecati molestias eum. Ut, eaque? Nam!</span>
+                <img src="img/Cannondale-Topstone-Carbon-Lefty-2021-Gravel-Bike-Review-Test-092.jpg" alt="no bike" class="container_img">
             </div>
         </div>
+    </div>
+    <div class="bike_info">
         <div id="imgHolder" class="imgHolder">
             <img id="bike_img" src="" alt="Bike">
 
@@ -32,7 +44,6 @@
                 <div class="model_specs" id="modelSpecs"></div>
                 <div class="model_price" id="modelPrice"></div>
                 <div class="model_price" id="modelPriceUSD"></div>
-                <div class="button">Order</div>
             </div>
         </div>
         <form id="autoForm">
@@ -80,11 +91,25 @@
                     </div>
                 </div>
             </div>
-            <!--[if lt IE 7]>
+        </form>
+    </div>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-            <script src="libs/jquery/jQuery.js"></script>
-            <script src="script/script.js" async defer></script>
+    <script src="libs/jquery/jQuery.js"></script>
+    <script src="script/script.js" async defer></script>
+    <footer>
+        <div class="footer_content">
+            <p>Site made on jQuery, by Igor Costiuc</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/profile.php?id=100013138950323" target="blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/xenilae_dev/" target="blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://vk.com/cigor95" target="blank"><i class="fa fa-vk"></i></a></li>
+                <li><a href="https://github.com/Xenilae" target="blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/igor-costiuc-1b5317227/" target="blank"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

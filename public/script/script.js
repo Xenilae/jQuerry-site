@@ -4,13 +4,19 @@ $(document).ready(function() {
         $(".top_text").css("opacity", 1 - $(window).scrollTop() / 500);
     });
 
+    $("button").on("click", function() {
+        $('html, body').animate({
+            scrollTop: $(".row").offset().top
+        }, 200);
+    });
+
     const changeImage = () => {
         let changeSpecs = $("input[name=bike]:checked");
         changeSpecs.on("change", function() {
             if (this.value == "21900") {
-                $("#bike_img").attr("src", "img/png-clipart-trek-bicycle-corporation-cyclo-cross-bicycle-trek-crossrip-racing-bicycle-gravel-bike-bicycle-frame-bicycle.png");
+                $("#bike_img").attr("src", "img/MY21Revolt2_ColorBTrekkingGreen.jpg");
             } else if (this.value == "20500") {
-                $("#bike_img").attr("src", "img/my22talon294-colorametallicblack-front-1089429.jpg")
+                $("#bike_img").attr("src", "img/MY21Talon1_ColorABlack.jpg")
             }
         });
     }
